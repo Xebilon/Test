@@ -1,0 +1,220 @@
+.hex-1 {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: white;
+    text-transform: uppercase;
+    background: red;
+    position: relative;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
+}
+.hex-1:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 20px solid red;
+}
+.hex-1:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 20px solid red;
+}
+
+.hex-2 {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: white;
+    text-transform: uppercase;
+    background: red;
+    position: relative;
+    border: 0px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.hex-2:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 20px solid red;
+}
+.hex-2:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 20px solid red;
+}
+
+.menu {
+    position: fixed;
+    text-align: center;
+    bottom: 30px;
+    left: calc((100vw/2) - 40px);
+    display: block;
+    margin: 0 auto;
+}
+
+#btn-toggle {
+    z-index: 4;
+}
+
+button, button:active, button:focus  {
+    outline: none;
+}
+
+.controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+#second {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -o-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+#third {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#fourth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-delay: 0.75s;
+    -moz-transition-delay: 0.75s;
+    -o-transition-delay: 0.75s;
+    transition-delay: 0.75s;
+}
+
+
+
+.menu-hex {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: white;
+    text-transform: uppercase;
+    background: red;
+    position: relative;
+    border: 0px;
+
+    -webkit-transition: background-color 1s linear;
+    -ms-transition: background-color 1s linear;
+    transition: background-color 1s linear;
+}
+.menu-hex:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 20px solid red;
+
+    -webkit-transition: border-bottom-color 1s linear;
+    -ms-transition: border-bottom-color 1s linear;
+    transition: border-bottom-color 1s linear;
+}
+.menu-hex:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 20px solid red;
+
+    -webkit-transition: border-top-color 1s linear;
+    -ms-transition: border-top-color 1s linear;
+    transition: border-top-color 1s linear;
+}
+
+.active:before {
+    border-bottom-color: #cc0000;
+    -webkit-transition: border-bottom-color 1s linear;
+    -ms-transition: border-bottom-color 1s linear;
+    transition: border-bottom-color 1s linear;
+}
+
+.active:after {
+    border-top-color: #cc0000;
+    -webkit-transition: border-top-color 1s linear;
+    -ms-transition: border-top-color 1s linear;
+    transition: border-top-color 1s linear;
+}
+
+.active {
+    background-color: #cc0000;
+    -webkit-transition: background-color 1s linear;
+    -ms-transition: background-color 1s linear;
+    transition: background-color 1s linear;
+}
