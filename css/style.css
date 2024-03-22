@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  background-image: url("bg2.jpg");
+  background-image: url("bg/bg2.jpg");
   background-color: #0c0f15;
   overflow-x:hidden;
   color: #ababab; }
@@ -142,7 +142,7 @@ textarea, label {
   vertical-align: middle; }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
