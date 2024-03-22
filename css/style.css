@@ -333,7 +333,7 @@ textarea, label {
 
 .page-home {
   background-position: center center;
-  background-repeat: fixed;
+  background-repeat: repeat;
   background-size: cover;
   vertical-align: middle; }
   .page-home .overlay {
@@ -833,6 +833,3 @@ button, button:active, button:focus  {
     -ms-transition: background-color 1s linear;
     transition: background-color 1s linear;
 }
-
-
-
