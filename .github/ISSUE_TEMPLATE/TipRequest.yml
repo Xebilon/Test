@@ -1,9 +1,3 @@
-name: Förbättringar/Fel
-description: Färbättringar/Fel
-title: "[Tip]: I want "
-labels: [Tip, enhancement]
-assignees:
-  - Xebilon
 body:
   - type: markdown
     attributes:
