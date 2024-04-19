@@ -352,15 +352,16 @@ transform: scale(1.5);
 <a id="hpl"></a>
 <br><br><br>
 
+
 <!doctype html>
 <html><head>
 <script>
 
 function searchTable () {
-  const filter1 = document.getElementById("myInput").value.trim();
-  const filter2 = document.getElementById("myInput2").value.trim();
+  const filter1 = document.getElementById("myInput5").value.trim();
+  const filter2 = document.getElementById("myInput6").value.trim();
 
-  const tableRows = document.getElementById("myTable").getElementsByTagName("tr");
+  const tableRows = document.getElementById("myTable3").getElementsByTagName("tr");
 
   for (const tr of tableRows) {
     if (tr.id === 'tableHeader') continue;
@@ -381,14 +382,14 @@ function searchTable () {
 <meta charset="utf-8">
 <title>Filtered Table</title>
 <style type="text/css">
-#myInput {
+#myInput5 {
   width: 40%; /* Full-width */
   font-size: 16px; /* Increase font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
 }
-#myInput2 {
+#myInput6 {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
@@ -398,24 +399,24 @@ function searchTable () {
   border: 1px solid #ddd; /* Add a grey border */
   margin-bottom: 12px; /* Add some space below the input */
 }
-#myTable {
+#myTable3 {
   border-collapse: collapse; /* Collapse borders */
   width: 70%; /* Full-width */
   border: 1px solid #ddd; /* Add a grey border */
   font-size: 18px; /* Increase font-size */
 }
 
-#myTable th, #myTable td {
-  text-align: left; /* Left-align text */
+#myTable3 th, #myTable3 td {
+  text-align: center; /* Left-align text */
   padding: 12px; /* Add padding */
 }
 
-#myTable tr {
+#myTable3 tr {
   /* Add a bottom border to all table rows */
   border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover {
+#myTable3 tr.header, #myTable3 tr:hover {
   /* Add a grey background color to the table header and on hover */
   background-color: #f1f1f1;
 }
@@ -430,7 +431,7 @@ function searchTable () {
     <table width="50%" border="0" cellspacing="0" cellpadding="5">
       <tbody>
         <tr>
-          <td width="40%"><select id="myInput" onchange="searchTable()" placeholder="Role Category..">
+          <td width="40%"><select id="myInput5" onchange="searchTable()" placeholder="Role Category..">
               <option disabled selected value>Från</option>
 			  
 <option value="Alingsås">Alingsås</option>
@@ -561,7 +562,7 @@ function searchTable () {
 
               </select>
             </td>
-          <td width="40%"><select id="myInput2" onchange="searchTable()" placeholder="Role Category..">
+          <td width="40%"><select id="myInput6" onchange="searchTable()" placeholder="Role Category..">
               <option disabled selected value>Till</option>
 <option value="Alingsås">Alingsås</option>
 <option value="Anneberg">Anneberg</option>
@@ -694,7 +695,7 @@ function searchTable () {
         </tr>
       </tbody>
 </table>
-<table id="myTable" >
+<table id="myTable3" >
 
 <center>
  <tr id="tableHeader" class="header">
@@ -82833,8 +82834,8 @@ function searchTable () {
 </body>
 </html>
 
-</center>
-</body>
+
+
 
 
 
