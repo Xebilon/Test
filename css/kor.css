@@ -25,6 +25,7 @@
 #table th, #table td {
   text-align: center; /* Left-align text */
   padding: 12px; /* Add padding */
+  color: Blue; /* Text color */
 }
 
 #table tr {
