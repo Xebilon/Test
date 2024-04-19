@@ -40,12 +40,12 @@
                                             <div></div>
                                         </div>
 										
-                                        <a  class="hex-content" href="#tli">
+                                        <a  class="hex-content" href="#nr">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="fa-solid fa-sign-hanging"></i>
                                                 </span>
-                                                <span class="title">Hållplats</span>
+                                                <span class="title">Tågnummer</span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
                                         </a>
@@ -62,12 +62,12 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a  class="hex-content" href="#hpl">
+                                        <a  class="hex-content" href="#karta">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="fa fa-map-signs"></i>
                                                 </span>
-                                                <span class="title">Vänding</span>
+                                                <span class="title">Tågkarta</span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
                                         </a>
@@ -83,12 +83,12 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a  class="hex-content" href="#oml">
+                                        <a  class="hex-content" href="#hpl">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="fa-solid fa-arrows-split-up-and-left"></i>
                                                 </span>
-                                                <span class="title">Omläggning</span>
+                                                <span class="title">Ersättningshållplatser/Körtider</span>
                                             </span>
                                             <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#1e2530"></path></svg>
                                         </a>    
@@ -148,9 +148,9 @@
 
 
 
-<h1>Hållplatsändringar</h1>
-<a id="hpl"></a>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Hållplats..." title="Type in a name">
+<h1>Tågnummer</h1>
+<a id="nr"></a>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="linjenummer..." title="Type in a name">
 
 <table id="myTable">
 <tr class="header">	
@@ -200,6 +200,67 @@ function myFunction() {
   }
 }
 </script>
+
+
+
+
+
+<br><br><br><br><br><br>
+<h1>Tågkarta</h1>
+<a id="karta"></a>
+
+<br><br><br><br><br><br>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+         
+    
+     
+    <style>
+       .thumbnail { 
+top:-50px; 
+left:-35px; 
+display:block; 
+z-index:999; 
+cursor: pointer; 
+-webkit-transition-property: all; 
+-webkit-transition-duration: 0.3s; 
+-webkit-transition-timing-function: ease; 
+} 
+
+/*change the number below to scale to the appropriate size*/ 
+.thumbnail:hover { 
+transform: scale(1.5); 
+
+}
+    </style>
+</head>
+
+<body>
+
+<center>
+ 
+      <img src="./bg/karta.jpg" class="thumbnail" height="900" width="900" /> 
+ 
+   </center>
+</body>
+
+
+
+
+<br><br><br><br><br><br>
+
+
+
+
+<h1>Ersättningshållplatser/Körtider</h1>
+<a id="hpl"></a>
+<br><br><br>
+
+
+
 </center>
 </body>
 
